@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigationdrawerlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".JanaSarthiHomePageActivity"
+    android:background="#F3F3F3">
+
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/navigationopenerimgview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/navigation_icon"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.109"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.085"/>
+
+
+
+            <TextView
+                android:id="@+id/janasarthihomepageactivityheader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/जनsarthi"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="28sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.41"
+                app:layout_constraintStart_toStartOf="@+id/navigationopenerimgview"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.066"/>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/mainmodulecardview"
+                android:layout_width="match_parent"
+                android:layout_height="233dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:background="#ffffff"
+                app:cardCornerRadius="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/janasarthihomepageactivityheader"
+                android:elevation="15dp"
+                app:layout_constraintVertical_bias="0.2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:id="@+id/mainmodulenametextview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/aarogya_sarthi"
+                        android:textSize="18sp"
+                        android:layout_marginTop="30dp"
+                        android:layout_gravity="center_horizontal"/>
+
+                    <TextView
+                        android:id="@+id/mainmoduledesctextview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="25dp"
+                        android:text="@string/a_diagnostics_module_nwhich_will_assist_you_in_all_your_nhealth_needs_regarding_current_npandemic_of_corona_virus"
+                        android:textAlignment="center"
+                        android:textSize="16sp"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/mainmoduleexplorebtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_horizontal"
+                        android:backgroundTint="#FBCA08"
+                        app:cornerRadius="15dp"
+                        android:elevation="10dp"
+                        android:text="@string/explore"
+                        android:textAlignment="center"
+                        android:layout_marginTop="10dp"
+                        />
+                </LinearLayout>
+
+
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <ImageView
+                android:id="@+id/mainmoduleimageview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/logo"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.2"
+                android:elevation="20dp"/>
+
+
+
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/secondarymodulecardview"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.01"
+                app:cardBackgroundColor="#ffffff"
+                android:layout_marginEnd="50dp"
+                app:layout_constraintTop_toBottomOf="@+id/mainmodulecardview">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/secondarymoduletitletxtview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/kaushal_sarthi"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="40dp"
+                        android:textSize="18sp"
+                        />
+
+                    <TextView
+                        android:id="@+id/secondarymoduledesctextview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/upgrade_your_skills_with_latest_vocational_courses_and_explore_new_employment_opportunities"
+                        android:textAlignment="center"
+                        android:paddingStart="5dp"
+                        android:paddingEnd="5dp"
+                        android:textSize="14sp"
+                        android:layout_marginTop="15dp"/>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/secondarymoduleexplorebtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:backgroundTint="#17B5F7"
+                        android:layout_gravity="center_horizontal"
+                        android:text="@string/explore"
+                        android:layout_marginTop="10dp"
+                        app:cornerRadius="15dp"
+                        />
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <ImageView
+                android:id="@+id/secondarymoduleimageview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/teacher"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintHorizontal_bias="0.19"
+                app:layout_constraintVertical_bias="0.642"
+                android:elevation="20dp"/>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/tertiarymodulecardview"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toEndOf="@+id/secondarymodulecardview"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/mainmodulecardview"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="20dp"
+                app:cardBackgroundColor="#ffffff">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tertiarymoduletitletextview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/dhan_sarthi"
+                        android:textSize="18sp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="40dp"/>
+
+                    <TextView
+                        android:id="@+id/tertiarymoduledesctextview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/a_guide_for_those_who_want_to_open_a_new_business_and_lend_a_hand_in_creating_a_new_india"
+                        android:layout_marginTop="15dp"
+                        android:paddingStart="5dp"
+                        android:paddingEnd="5dp"
+                        android:textAlignment="center"
+                        android:textSize="14sp"
+                        />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/tertiarymoduleexplorebtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_horizontal"
+                        android:backgroundTint="#F6C400"
+                        app:cornerRadius="15dp"
+                        android:text="@string/explore"
+                        android:layout_marginTop="10dp"
+                        />
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <ImageView
+                android:id="@+id/tertiarymoduleimageview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/money"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintHorizontal_bias="0.812"
+                app:layout_constraintVertical_bias="0.643"
+                android:elevation="20dp"
+                />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigationview"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:headerLayout="@layout/navigation_header"
+        app:itemTextColor="@color/colorPrimary"
+        app:itemIconTint="@color/colorPrimary"
+        app:menu="@menu/navigationmenu"
+        android:layout_gravity="start"
+        android:elevation="30dp"
+        />
+
+
+
+
+
+
+
+
+
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

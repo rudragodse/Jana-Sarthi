@@ -1,0 +1,555 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AarogyaSarthi.TakeTest">
+
+
+    <TextView
+        android:id="@+id/title_for_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="SYMPTOMS"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/greyishblack"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/coughcard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="15dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:cardBackgroundColor="#ffffff"
+        app:cardCornerRadius="30dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/fevercard"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_for_activity">
+
+        <RelativeLayout
+            android:id="@+id/contentLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/symptomimage"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/cough"/>
+
+            <TextView
+                android:id="@+id/question_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="Do you have Cough?"
+                android:textColor="@color/greyishblack"
+                android:textSize="15sp"/>
+
+            <LinearLayout
+                android:id="@+id/chiplayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/question_textview"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal">
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/cough_yesoption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:checkable="true"
+                    android:text="YES"
+                    android:textColor="@color/red"
+                    app:chipBackgroundColor="#ffffff">
+
+                </com.google.android.material.chip.Chip>
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/cough_nooption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:checkable="true"
+                    android:text="NO"
+                    android:textColor="@color/colorPrimary"
+                    app:chipBackgroundColor="#ffffff">
+
+                </com.google.android.material.chip.Chip>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/daystextview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/chiplayout"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:text="If yes then from how many days"
+                android:textSize="15sp"/>
+
+            <LinearLayout
+                android:id="@+id/chip_daysLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/daystextview"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal">
+
+                <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/cough_daysviewgroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp">
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/cough_day_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/chip_theme"
+                        android:checkable="true"
+                        android:elevation="5dp"
+                        android:text="3"
+                        android:textColor="@color/red"
+                        app:chipBackgroundColor="#ffffff">
+
+                    </com.google.android.material.chip.Chip>
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/cough_day_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/chip_theme"
+                        android:checkable="true"
+                        android:elevation="5dp"
+                        android:text="5"
+                        android:textColor="@color/red"
+                        app:chipBackgroundColor="#ffffff">
+
+                    </com.google.android.material.chip.Chip>
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/cough_day_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/chip_theme"
+                        android:checkable="true"
+                        android:elevation="5dp"
+                        android:text="7"
+                        android:textColor="@color/red"
+                        app:chipBackgroundColor="#ffffff">
+
+                    </com.google.android.material.chip.Chip>
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/cough_day_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/chip_theme"
+                        android:checkable="true"
+                        android:elevation="5dp"
+                        android:text="9"
+                        android:textColor="@color/red"
+                        app:chipBackgroundColor="#ffffff">
+
+                    </com.google.android.material.chip.Chip>
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/cough_day_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/chip_theme"
+                        android:checkable="true"
+                        android:elevation="5dp"
+                        android:text="11"
+                        android:textColor="@color/red"
+                        app:chipBackgroundColor="#ffffff">
+
+                    </com.google.android.material.chip.Chip>
+                </com.google.android.material.chip.ChipGroup>
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/fevercard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:elevation="15dp"
+        app:cardBackgroundColor="#ffffff"
+        app:cardCornerRadius="30dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.44">
+
+        <RelativeLayout
+            android:id="@+id/contentLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/symptomimage2"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/fever"/>
+
+            <TextView
+                android:id="@+id/question_textview2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="Do you have Fever?"
+                android:textColor="@color/greyishblack"
+                android:textSize="15sp"/>
+
+            <LinearLayout
+                android:id="@+id/chiplayout2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/question_textview2"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal">
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/fever_yesoption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:checkable="true"
+                    android:text="YES"
+                    android:textColor="@color/red"
+                    app:chipBackgroundColor="#ffffff">
+
+                </com.google.android.material.chip.Chip>
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/fever_nooption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:checkable="true"
+                    android:text="NO"
+                    android:textColor="@color/colorPrimary"
+                    app:chipBackgroundColor="#ffffff">
+
+                </com.google.android.material.chip.Chip>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/daystextview2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/chiplayout2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:text="If yes then from how many days"
+                android:textSize="15sp"/>
+
+            <LinearLayout
+                android:id="@+id/chip_daysLayout2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/daystextview2"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal">
+
+                <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/fever_daysviewgroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp">
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/fever_day_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/chip_theme"
+                        android:checkable="true"
+                        android:elevation="5dp"
+                        android:text="3"
+                        android:textColor="@color/red"
+                        app:chipBackgroundColor="@color/white">
+
+                    </com.google.android.material.chip.Chip>
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/fever_day_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/chip_theme"
+                        android:checkable="true"
+                        android:elevation="5dp"
+                        android:text="5"
+                        android:textColor="@color/red"
+                        app:chipBackgroundColor="@color/white">
+
+                    </com.google.android.material.chip.Chip>
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/fever_day_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/chip_theme"
+                        android:checkable="true"
+                        android:elevation="5dp"
+                        android:text="7"
+                        android:textColor="@color/red"
+                        app:chipBackgroundColor="@color/white">
+
+                    </com.google.android.material.chip.Chip>
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/fever_day_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/chip_theme"
+                        android:checkable="true"
+                        android:elevation="5dp"
+                        android:text="9"
+                        android:textColor="@color/red"
+                        app:chipBackgroundColor="@color/white">
+
+                    </com.google.android.material.chip.Chip>
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/fever_day_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/chip_theme"
+                        android:checkable="true"
+                        android:elevation="5dp"
+                        android:text="11"
+                        android:textColor="@color/red"
+                        app:chipBackgroundColor="@color/white">
+
+                    </com.google.android.material.chip.Chip>
+                </com.google.android.material.chip.ChipGroup>
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/breathingcard3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:elevation="15dp"
+        app:cardBackgroundColor="#ffffff"
+        app:cardCornerRadius="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fevercard"
+        app:layout_constraintVertical_bias="0.176">
+
+        <RelativeLayout
+            android:id="@+id/contentLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/symptomimage3"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/breathing" />
+
+            <TextView
+                android:id="@+id/question_textview3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="110dp"
+                android:layout_marginTop="5dp"
+                android:text="Do you have difficulty in breathing?"
+                android:textColor="@color/greyishblack"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:id="@+id/chiplayout3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/question_textview3"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal">
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/breathing_yesoption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:checkable="true"
+                    android:text="YES"
+                    android:textColor="@color/red"
+                    app:chipBackgroundColor="#ffffff">
+
+                </com.google.android.material.chip.Chip>
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/breathing_nooption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:checkable="true"
+                    android:text="NO"
+                    android:textColor="@color/colorPrimary"
+                    app:chipBackgroundColor="#ffffff">
+
+                </com.google.android.material.chip.Chip>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/daystextview3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/chiplayout3"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:text="If yes then from how many days"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:id="@+id/chip_daysLayout3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/daystextview3"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal">
+
+                <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/breathing_daysviewgroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp">
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/breathing_day_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/chip_theme"
+                        android:checkable="true"
+                        android:elevation="5dp"
+                        android:text="3"
+                        android:textColor="@color/red"
+                        app:chipBackgroundColor="@color/white">
+
+                    </com.google.android.material.chip.Chip>
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/breathing_day_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/chip_theme"
+                        android:checkable="true"
+                        android:elevation="5dp"
+                        android:text="5"
+                        android:textColor="@color/red"
+                        app:chipBackgroundColor="@color/white">
+
+                    </com.google.android.material.chip.Chip>
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/breathing_day_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/chip_theme"
+                        android:checkable="true"
+                        android:elevation="5dp"
+                        android:text="7"
+                        android:textColor="@color/red"
+                        app:chipBackgroundColor="@color/white">
+
+                    </com.google.android.material.chip.Chip>
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/breathing_day_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/chip_theme"
+                        android:checkable="true"
+                        android:elevation="5dp"
+                        android:text="9"
+                        android:textColor="@color/red"
+                        app:chipBackgroundColor="@color/white">
+
+                    </com.google.android.material.chip.Chip>
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/breathing_day_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/chip_theme"
+                        android:checkable="true"
+                        android:elevation="5dp"
+                        android:text="11"
+                        android:textColor="@color/red"
+                        app:chipBackgroundColor="@color/white">
+
+                    </com.google.android.material.chip.Chip>
+                </com.google.android.material.chip.ChipGroup>
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:backgroundTint="@color/yellowtheme"
+        android:elevation="10dp"
+        android:onClick="renderReport"
+        android:text="GET REPORT"
+        android:textColor="#ffffff"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/breathingcard3"
+        app:layout_constraintVertical_bias="0.329">
+
+    </com.google.android.material.button.MaterialButton>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

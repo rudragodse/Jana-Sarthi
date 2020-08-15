@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivities.OrganizationSignUpActivity"
+    android:background="@color/colorPrimary">
+
+    <ImageView
+        android:id="@+id/OrgImgview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ngo1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.028"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/OrgNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/rounded_edit_text"
+        android:hint="enter the name of organization"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/OrgImgview"
+        app:layout_constraintVertical_bias="0.058"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/OrgServiceEdittxt"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/rounded_edit_text"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/OrgNameEditText"
+        app:layout_constraintVertical_bias="0.065"
+        android:hint="Enter the type of service provided"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/OrgContactEdittxt"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/rounded_edit_text"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:hint="Enter contact details"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/OrgServiceEdittxt"
+        app:layout_constraintVertical_bias="0.075"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/OrgEmailEdittxt"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/rounded_edit_text"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:hint="Enter your email address"
+        android:drawableStart="@mipmap/gmail"
+        android:drawablePadding="10dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:inputType="textEmailAddress"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/OrgContactEdittxt"
+        app:layout_constraintVertical_bias="0.085"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/OrgPasswordEdittxt"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/rounded_edit_text"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:hint="Enter your password"
+        android:drawableStart="@mipmap/lock"
+        android:drawablePadding="10dp"
+        android:inputType="textPassword"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/OrgEmailEdittxt"
+        app:layout_constraintVertical_bias="0.105"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/OrgStateEdittxt"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/rounded_edit_text"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:hint="Enter your state"
+        android:drawableStart="@mipmap/india"
+        android:drawablePadding="10dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/OrgPasswordEdittxt"
+        app:layout_constraintVertical_bias="0.15"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/OrgRegbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#ffffff"
+        android:text="Register"
+        android:textColor="@color/colorPrimary"
+        android:elevation="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/OrgStateEdittxt"
+        app:layout_constraintVertical_bias="0.500"
+        app:cornerRadius="16dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

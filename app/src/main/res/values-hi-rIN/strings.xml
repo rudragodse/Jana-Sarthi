@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">जन सारथी</string>
+    <string name="enter_your_name">" अपना नाम दर्ज करें"</string>
+    <string name="जनsarthi">जन सारथी</string>
+    <string name="aarogya_sarthi">आरोग्य सारथी</string>
+    <string name="a_diagnostics_module_nwhich_will_assist_you_in_all_your_nhealth_needs_regarding_current_npandemic_of_corona_virus">" एक डायग्नोस्टिक्स मॉड्यूल जो कोरोना वायरस की वर्तमान महामारी से संबंधित आपकी सभी स्वास्थ्य आवश्यकताओं में सहायता करेगा"</string>
+    <string name="explore">" पता लगाएं"</string>
+    <string name="kaushal_sarthi">कौशल सारथी</string>
+    <string name="upgrade_your_skills_with_latest_vocational_courses_and_explore_new_employment_opportunities">" नवीनतम व्यावसायिक पाठ्यक्रमों के साथ अपने कौशल को अपग्रेड करें और रोजगार के नए अवसरों का पता लगाएं"</string>
+    <string name="dhan_sarthi">" धन सारथी"</string>
+    <string name="a_guide_for_those_who_want_to_open_a_new_business_and_lend_a_hand_in_creating_a_new_india">" उन लोगों के लिए एक गाइड जो एक नया व्यवसाय खोलना चाहते हैं और एक नया भारत बनाने में हाथ बंटाना चाहते हैं"</string>
+    <string name="apply">लागू करना</string>
+    <string name="go_ahead">" आगे बढ़ें"</string>
+    <string name="call_now">" अभि कॉल करे"</string>
+    <string name="select_distance">" दूरी का चयन करें"</string>
+    <string name="select_from_a_nwide_range_of_essential_products">आवश्यक उत्पादों की एक विस्तृत श्रृंखला से चुनें</string>
+    <string name="covid_19_essentials">" कोविड 19 आवश्यक उत्पाद"</string>
+    <string name="register_as_seller">विक्रेता पंजीकरण</string>
+    <string name="your_appointments_nfor_the_day">" दिन के लिए आपकी नियुक्ति।"</string>
+    <string name="Covid_19_is_a_global_pandemic_as_stated_by_WHO.Covid_19_is_an_infectious_disease_caused_by_the_corona_virus.">" कोविड 19 एक वैश्विक महामारी है जो WHO द्वारा शुरू की गई है। कोविड 19 एक संक्रामक रोग है जो कोरोना वायरस के कारण होता है"</string>
+    <string name="everything_you_need_nto_know_about_ncovid_19">कोविड 19 केलिये जाँकारी</string>
+    <string name="symptoms">" लक्षण"</string>
+    <string name="the_symptoms_that_were_previously_ndisclosed_were_mainly_cough_fever_nand_difficulty_in_breathing">पहले जिन लक्षणों का खुलासा किया गया था, वे मुख्य रूप से खांसी, बुखार और सांस लेने में कठिनाई थे।</string>
+    <string name="take_test_again">" फिर से जांच करवाएं"</string>
+    <string name="remedies_you_can_do_tosafeguard_nyourself_from_corona_virus">ऐसे उपचार जिससे आप अपने आपको  कोविड 19  से  सुरक्षित  कर सकते हैं</string>
+    <string name="take_care_not_to_shake_hands_with_anyone_you_came_in_contact_with">" ध्यान रखें कि आप किसी के साथ हाथ मिलाएं नहीं"</string>
+    <string name="always_wear_mask_while_going_out_because_this_virus_is_spread_though_the_cough_droplets">" बाहर जाते समय हमेशा मास्क पहनें"</string>
+    <string name="always_wash_you_hands_with_soap_after_coming_home">" घर आने के बाद हमेशा आपको साबुन से हाथ धोना चाहिए"</string>
+    <string name="detected_city">शहर</string>
+</resources>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivities.UserSignUpActivity"
+    android:background="@color/colorPrimary">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/user_screen"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.008" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/NameInputEditText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/rounded_edit_text"
+        android:drawableStart="@mipmap/user"
+        android:drawablePadding="10dp"
+        android:elevation="20dp"
+        android:hint="@string/enter_your_name"
+        android:inputType="text"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.015" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/EmailInputEditText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/rounded_edit_text"
+        android:drawableStart="@mipmap/gmail"
+        android:drawablePadding="10dp"
+        android:elevation="20dp"
+        android:inputType="textEmailAddress"
+        android:hint="enter your email address"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/NameInputEditText"
+        app:layout_constraintVertical_bias="0.077" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/PasswordInputEditText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/rounded_edit_text"
+        android:drawableStart="@mipmap/lock"
+        android:drawablePadding="5dp"
+        android:hint="enter your password"
+        android:inputType="textPassword"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EmailInputEditText"
+        app:layout_constraintVertical_bias="0.063" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/statedittext"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="40dp"
+        android:background="@drawable/rounded_edit_text"
+        android:drawableStart="@mipmap/india"
+        android:drawablePadding="5dp"
+        android:hint="enter your state"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:layout_marginEnd="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PasswordInputEditText"
+        app:layout_constraintVertical_bias="0.087" />
+
+    <TextView
+        android:id="@+id/roletxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Are you one of the following?"
+        android:textColor="#ffffff"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/healthworkerchip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/statedittext"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/healthworkerchip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checkable="true"
+        android:text="I am a health worker"
+        app:checkedIconEnabled="true"
+        app:checkedIconVisible="true"
+        app:chipBackgroundColor="#ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/statedittext"
+        app:layout_constraintVertical_bias="0.215" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/essentialworkerchip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checkable="true"
+        app:checkedIconVisible="true"
+        app:checkedIconEnabled="true"
+        android:text="I am an essential worker"
+        app:chipBackgroundColor="#ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/healthworkerchip"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/volunteerchip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I am willing to volunteer"
+        android:checkable="true"
+        app:checkedIconEnabled="true"
+        app:checkedIconVisible="true"
+        app:chipBackgroundColor="#ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/essentialworkerchip"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/registerbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#ffffff"
+        app:cornerRadius="15dp"
+        android:text="Register"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/volunteerchip"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

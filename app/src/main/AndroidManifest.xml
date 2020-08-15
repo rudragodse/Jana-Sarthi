@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.janasarthi">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.SET_ALARM" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/janasarthi_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/janasarthi_logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".AarogyaSarthi.CheckAppointments"/>
+        <activity android:name=".DhanSarthi.CovidEssentialProducts" />
+        <activity android:name=".DhanSarthi.BusinessService" />
+        <activity android:name=".DhanSarthi.DhanSarthiHomePage" />
+        <activity android:name=".AarogyaSarthi.E_Pass_Activity" />
+        <activity android:name=".KaushalSarthi.KaushalSarthiSubjects" />
+        <activity android:name=".KaushalSarthi.KaushalSarthiHomePage" />
+        <activity android:name=".AarogyaSarthi.NearbyZonesActivity" />
+        <activity android:name=".AarogyaSarthi.ViewCounsellorActivity" />
+        <activity android:name=".AarogyaSarthi.GetHelplineNos" />
+        <activity android:name=".AarogyaSarthi.VolunteerActivity" />
+        <activity android:name=".AarogyaSarthi.Labs" />
+        <activity android:name=".AarogyaSarthi.StatsPage" />
+        <activity android:name=".AarogyaSarthi.CoronaTab" />
+        <activity android:name=".AarogyaSarthi.TakeTest" />
+        <activity android:name=".AarogyaSarthi.AarogyaSarthiHomePage" />
+        <activity android:name=".JanaSarthiHomePageActivity" />
+        <activity android:name=".SignUpActivities.OrganizationSignUpActivity" />
+        <activity android:name=".SignUpActivities.CounsellorSignUpActivity" />
+        <activity android:name=".SignUpActivities.MentorSignUpActivity" />
+        <activity android:name=".SignUpActivities.DoctorSignUpActivity" />
+        <activity android:name=".UserRoleActivity" />
+        <activity android:name=".SignUpActivities.UserSignUpActivity" />
+        <activity android:name=".SignInActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name=".AarogyaSarthi.ReminderReceiver"/>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

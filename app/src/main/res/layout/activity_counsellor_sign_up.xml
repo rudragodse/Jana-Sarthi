@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivities.CounsellorSignUpActivity"
+    android:background="@color/colorPrimary">
+
+    <ImageView
+        android:id="@+id/CounsellorImgview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/counsellor3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.028"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/CounsellorNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/rounded_edit_text"
+        android:drawableStart="@mipmap/user"
+        android:drawablePadding="10dp"
+        android:hint="enter your name"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/CounsellorImgview"
+        app:layout_constraintVertical_bias="0.058"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/CounsellorSpecializationEdittxt"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/rounded_edit_text"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/CounsellorNameEditText"
+        app:layout_constraintVertical_bias="0.033"
+        android:hint="Enter your specialization"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/CounsellorQualificationEdittxt"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/rounded_edit_text"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:hint="Enter your qualification"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/CounsellorSpecializationEdittxt"
+        app:layout_constraintVertical_bias="0.038"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/CounsellorStateedittext"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/rounded_edit_text"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:hint="enter your state"
+        android:drawableStart="@mipmap/india"
+        android:drawablePadding="10dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CounsellorQualificationEdittxt"
+        app:layout_constraintVertical_bias="0.04"
+        />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/counsellor_contact"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/rounded_edit_text"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:hint="enter your contact no.."
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:inputType="phone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/CounsellorStateedittext"
+        app:layout_constraintVertical_bias="0.045"
+        />
+
+
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/CounsellorEmailEdittxt"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/rounded_edit_text"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:hint="Enter your email address"
+        android:drawableStart="@mipmap/gmail"
+        android:drawablePadding="10dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:inputType="textEmailAddress"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/counsellor_contact"
+        app:layout_constraintVertical_bias="0.05"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/CounsellorPasswordEdittxt"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/rounded_edit_text"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:hint="Enter your password"
+        android:drawableStart="@mipmap/lock"
+        android:drawablePadding="10dp"
+        android:inputType="textPassword"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CounsellorEmailEdittxt"
+        app:layout_constraintVertical_bias="0.09"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/CousellorRegbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#ffffff"
+        android:text="Register"
+        android:textColor="@color/colorPrimary"
+        android:elevation="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CounsellorPasswordEdittxt"
+        app:layout_constraintVertical_bias="0.400"
+        app:cornerRadius="16dp"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

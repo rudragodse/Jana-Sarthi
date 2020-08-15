@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivities.DoctorSignUpActivity"
+    android:background="@color/colorPrimary">
+
+    <ImageView
+        android:id="@+id/doctorimgview"
+        android:layout_width="158dp"
+        android:layout_height="158dp"
+        android:src="@mipmap/doctor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.027"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/DoctorNameInputEditText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:inputType="textPersonName"
+        android:background="@drawable/rounded_edit_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/doctorimgview"
+        app:layout_constraintVertical_bias="0.045"
+        android:hint="Enter your name..."
+        android:drawableStart="@mipmap/user"
+        android:drawablePadding="10dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/RegistrationNoInputEditText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/rounded_edit_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/DoctorNameInputEditText"
+        app:layout_constraintVertical_bias="0.050"
+        android:hint="Enter IMR Registration No..."
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/DateInputEditText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/rounded_edit_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/RegistrationNoInputEditText"
+        app:layout_constraintVertical_bias="0.050"
+        android:hint="Select date of Registration"
+        android:drawableEnd="@mipmap/calendar"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/SpecializationInputEditText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/rounded_edit_text"
+        android:hint="Enter your specialization..."
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/DateInputEditText"
+        app:layout_constraintVertical_bias="0.061" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/StateMedicalCouncilInputEditText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/rounded_edit_text"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/SpecializationInputEditText"
+        app:layout_constraintVertical_bias="0.075"
+        android:hint="Enter State Medical Council"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/DoctorEmailInputEditText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/rounded_edit_text"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:hint="Enter your email address"
+        android:drawableStart="@mipmap/gmail"
+        android:drawablePadding="10dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/StateMedicalCouncilInputEditText"
+        app:layout_constraintVertical_bias="0.085"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/DoctorPasswordInputEditText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="40dp"
+        android:inputType="textPassword"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/rounded_edit_text"
+        android:drawableStart="@mipmap/lock"
+        android:drawablePadding="10dp"
+        android:hint="Enter your password"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/DoctorEmailInputEditText"
+        app:layout_constraintVertical_bias="0.147"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/DoctorRegbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#ffffff"
+        app:cornerRadius="16dp"
+        android:text="Register"
+        android:textColor="@color/colorPrimary"
+        android:elevation="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/DoctorPasswordInputEditText"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,123 @@
+<resources>
+    <string name="app_name">Jana Sarthi</string>
+    <string name="enter_your_name">enter your name</string>
+    <string name="call_now">call now</string>
+    <string name="select_distance">Select distance</string>
+
+    <string-array name="states">
+        <item>select another state or UT..</item>
+        <item>Andhra Pradesh</item>
+        <item>Arunachal Pradesh</item>
+        <item>Assam</item>
+        <item>Andaman and Nicobar Islands</item>
+        <item>Bihar</item>
+        <item>Chhattisgarh</item>
+        <item>Chandigarh</item>
+        <item>Delhi</item>
+        <item>Dadra and Nagar Haveli</item>
+        <item>Daman and Diu</item>
+        <item>Goa</item>
+        <item>Gujrat</item>
+        <item>Haryana</item>
+        <item>Himachal Pradesh</item>
+        <item>Jharkhand</item>
+        <item>Jammu and Kashmir</item>
+        <item>Karnataka</item>
+        <item>Kerela</item>
+        <item>Lakshadweep</item>
+        <item>Ladakh</item>
+        <item>Madhya Pradesh</item>
+        <item>Maharashtra</item>
+        <item>Manipur</item>
+        <item>Meghalaya</item>
+        <item>Mizoram</item>
+        <item>Nagaland</item>
+        <item>Odisha</item>
+        <item>Punjab</item>
+        <item>Puducherry</item>
+        <item>Rajasthan</item>
+        <item>Sikkim</item>
+        <item>Tamil Nadu</item>
+        <item>Telangana</item>
+        <item>Tripura</item>
+        <item>Uttar Pradesh</item>
+        <item>West Bengal</item>
+    </string-array>
+
+
+    <string-array name="Sectors">
+        <item>Aerospace and Aviation</item>
+        <item>Agriculture</item>
+        <item>Apparel</item>
+        <item>Automotive</item>
+        <item>Beauty and Wellness</item>
+        <item>Banking Finance and Insurance</item>
+        <item>Capital Goods and Manufacturing</item>
+        <item>Construction</item>
+        <item>Chemicals and Petrochemicals</item>
+        <item>Education Training and Research</item>
+        <item>Power</item>
+        <item>Electronics and HW</item>
+        <item>IT and ITES</item>
+        <item>Environmental Science</item>
+        <item>Food Industry</item>
+        <item>Tourism and Hospitality</item>
+        <item>Office Administration and Faculty Management</item>
+        <item>Handicrafts and Carpets</item>
+        <item>Healthcare</item>
+        <item>Leather</item>
+        <item>Media and Entertainment</item>
+        <item>Mining</item>
+        <item>Plumbing</item>
+        <item>Safety and Security</item>
+        <item>Private Security</item>
+        <item>Rubber Industry</item>
+        <item>Textile and Handloom</item>
+    </string-array>
+
+    <string-array name="business_sector">
+        <item>select your business sector..</item>
+        <item>Food</item>
+        <item>Covid 19 Essential Products</item>
+        <item>Other than food and essential products</item>
+    </string-array>
+
+    <string-array name="business_stage">
+        <item>select your business stage..</item>
+        <item>Start</item>
+        <item>Manage</item>
+        <item>Grow</item>
+    </string-array>
+
+
+    <!--    <string name="title_activity_kaushal_sarthi_home_page">FullscreenActivity</string>-->
+    <!--    <string name="dummy_button">Dummy Button</string>-->
+    <!--    <string name="dummy_content">DUMMY\nCONTENT</string>-->
+    <string name="जनsarthi">जनsarthi</string>
+    <string name="aarogya_sarthi">Aarogya Sarthi</string>
+    <string name="a_diagnostics_module_nwhich_will_assist_you_in_all_your_nhealth_needs_regarding_current_npandemic_of_corona_virus">A diagnostics module\nwhich will assist you in all your\nhealth needs regarding current\npandemic of corona virus</string>
+    <string name="explore">Explore</string>
+    <string name="kaushal_sarthi">Kaushal Sarthi</string>
+    <string name="upgrade_your_skills_with_latest_vocational_courses_and_explore_new_employment_opportunities">Upgrade your skills with latest vocational courses and explore new employment opportunities</string>
+    <string name="dhan_sarthi">Dhan Sarthi</string>
+    <string name="a_guide_for_those_who_want_to_open_a_new_business_and_lend_a_hand_in_creating_a_new_india">A guide for those who want to open a new business and lend a hand in creating a new india</string>
+    <string name="apply">Apply</string>
+    <string name="go_ahead">Go ahead</string>
+    <string name="request_service">request service</string>
+    <string name="service_categories">Service Categories</string>
+    <string name="select_from_a_nwide_range_of_essential_products">Select from a wide range of essential products</string>
+    <string name="covid_19_essentials">Covid 19 Essentials</string>
+    <string name="register_as_seller">Register as seller</string>
+    <string name="your_appointments_nfor_the_day">Your Appointments for the day.</string>
+    <string name="Covid_19_is_a_global_pandemic_as_stated_by_WHO.Covid_19_is_an_infectious_disease_caused_by_the_corona_virus." >Covid 19 is a global pandemic as started by WHO.Covid 19 is an infectious disease caused by corona virus</string>
+    <string name="everything_you_need_nto_know_about_ncovid_19">EVERYTHING YOU NEED TO KNOW ABOUT COVID 19</string>
+    <string name="symptoms">Symptoms</string>
+    <string name="the_symptoms_that_were_previously_ndisclosed_were_mainly_cough_fever_nand_difficulty_in_breathing">The Symptoms that were previously disclosed were mainly Cough, Fever and Difficulty in breathing.</string>
+    <string name="take_test_again">Take Test Again</string>
+    <string name="remedies_you_can_do_tosafeguard_nyourself_from_corona_virus">Remedies you can do tosafeguard yourself from corona virus</string>
+    <string name="take_care_not_to_shake_hands_with_anyone_you_came_in_contact_with">Take care not to shake hands with anyone you came in contact with.</string>
+    <string name="always_wear_mask_while_going_out_because_this_virus_is_spread_though_the_cough_droplets">Always wear mask while going out because this virus is spread though the cough droplets</string>
+    <string name="always_wash_you_hands_with_soap_after_coming_home">Always wash you hands with soap after coming home</string>
+    <string name="detected_city">Detected City:</string>
+    <string name="notification_message">Have you washed your hands?\nHave you worn a mask?\nAre you carrying a mask with you?</string>
+</resources>

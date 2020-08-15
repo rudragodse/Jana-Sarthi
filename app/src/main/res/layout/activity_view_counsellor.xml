@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AarogyaSarthi.ViewCounsellorActivity"
+    android:background="#f3f3f3">
+
+    <TextView
+        android:id="@+id/meetourcounsellortxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Meet our Counsellors"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/shadedyellow"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/counsellorcardrecyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/meetourcounsellortxt"
+        app:layout_constraintVertical_bias="0.3"/>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/userLocCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            app:cardCornerRadius="20dp"
+            app:cardBackgroundColor="@color/white"
+            android:elevation="8dp"
+            android:padding="10dp"
+            >
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/user_tag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="User current location"
+                    android:layout_marginStart="10dp"
+                    android:textColor="@color/red"
+                    android:layout_marginTop="10dp"/>
+                <TextView
+                    android:id="@+id/loc_cord"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/user_tag"
+                    android:text="Location coordinates"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="10dp"/>
+
+
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:id="@+id/distance_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.2"
+            android:text="@string/select_distance"
+            android:layout_below="@+id/userLocCard"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"
+            android:textColor="@color/zonecolor"/>
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/distance_chipGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/distance_tag"
+            android:layout_marginTop="10dp"
+            app:singleSelection="true"
+            >
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/fivehundredchip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="500m"
+                android:checked="true"
+                android:checkable="true"
+                android:textColor="@color/zonecolor"
+                app:chipBackgroundColor="@color/white"
+                app:chipStrokeColor="@color/zonecolor"/>
+            <com.google.android.material.chip.Chip
+                android:id="@+id/thousandchip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1000m"
+                android:checkable="true"
+                android:textColor="@color/zonecolor"
+                app:chipBackgroundColor="@color/white"
+                app:chipStrokeColor="@color/zonecolor"/>
+            <com.google.android.material.chip.Chip
+                android:id="@+id/fifteenhundredchip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1500m"
+                android:checkable="true"
+                android:textColor="@color/zonecolor"
+                app:chipBackgroundColor="@color/white"
+                app:chipStrokeColor="@color/zonecolor"/>
+            <com.google.android.material.chip.Chip
+                android:id="@+id/twothousandchip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2000m"
+                android:checkable="true"
+                android:textColor="@color/zonecolor"
+                app:chipBackgroundColor="@color/white"
+                app:chipStrokeColor="@color/zonecolor"/>
+
+        </com.google.android.material.chip.ChipGroup>
+
+        <TextView
+            android:id="@+id/gettingzonestag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/distance_chipGroup"
+            android:text="Displaying Containment Zones"
+            android:textColor="@color/zonecolor"
+            android:layout_marginTop="20dp"
+            android:textSize="17sp"
+            android:layout_marginStart="10dp"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/ZonesRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gettingzonestag"
+            android:layout_marginTop="20dp"
+            />
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottie_animation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_rawRes="@raw/location_search"
+        app:lottie_loop="true"
+        app:lottie_autoPlay="true"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

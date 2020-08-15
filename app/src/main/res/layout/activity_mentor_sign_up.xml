@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivities.MentorSignUpActivity"
+    android:background="@color/colorPrimary">
+
+    <ImageView
+        android:id="@+id/MentorImgview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/mentor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.028"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/MentorNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/rounded_edit_text"
+        android:drawableStart="@mipmap/user"
+        android:drawablePadding="10dp"
+        android:hint="enter your name"
+        android:inputType="textPersonName"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/MentorImgview"
+        app:layout_constraintVertical_bias="0.018" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/MentorEmailEditText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/rounded_edit_text"
+        android:drawableStart="@mipmap/gmail"
+        android:drawablePadding="10dp"
+        android:hint="enter your email address"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/MentorNameEditText"
+        app:layout_constraintVertical_bias="0.045"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/MentorPasswordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/rounded_edit_text"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:drawableStart="@mipmap/lock"
+        android:paddingStart="10dp"
+        android:drawablePadding="10dp"
+        android:inputType="textPassword"
+        android:hint="enter your password"
+        android:paddingEnd="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/MentorEmailEditText"
+        app:layout_constraintVertical_bias="0.05"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/Mentorstateedittext"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/rounded_edit_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:hint="enter your state"
+        android:drawableStart="@mipmap/india"
+        android:drawablePadding="10dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        app:layout_constraintVertical_bias="0.06"
+        app:layout_constraintTop_toBottomOf="@+id/MentorPasswordEditText"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/MentorSectorEditText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/rounded_edit_text"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:hint="enter the sector of your course.."
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Mentorstateedittext"
+        app:layout_constraintVertical_bias="0.06"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/MentorCourseEditText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/rounded_edit_text"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:hint="enter the course you'll be teaching"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MentorSectorEditText"
+        app:layout_constraintVertical_bias="0.07"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/MentorRegisterbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#ffffff"
+        android:text="Register"
+        android:textColor="@color/colorPrimary"
+        android:elevation="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MentorCourseEditText"
+        app:layout_constraintVertical_bias="0.28"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
